@@ -1,0 +1,91 @@
+@charset "UTF-8";
+/* Aufgabenstellung
+Schreibe ein Mixin für Breite, Höhe und den Radius. 
+Alle Kugeln sollten die gleiche Größe 
+und den gleichen Radius haben. 
+Schreibe ein Mixin, um die Bälle zu animieren. 
+Bitte gib den Bällen die gleiche Animation. 
+Gib der Animation einen Namen, 
+eine Dauer, ein Timing, eine Funktion, 
+und die Anzahl der Iterationen sollte unendlich sein.
+Schreibe ein Mixin und übergib ein Argument 
+für die Hintergrundfarbe. 
+Alle drei Bälle sollten 
+einen anderen farbigen Hintergrund haben.
+
+Hinweise
+Verwende @keyframes, um die Animation zu erstellen. */
+.container {
+  margin-top: 50px;
+  width: 800px;
+  height: 300px;
+  border-top: 1px solid black;
+}
+
+div:nth-child(1) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: red;
+  border: 1px solid black;
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+div:nth-child(2) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: blue;
+  border: 1px solid black;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+div:nth-child(3) {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background: yellow;
+  border: 1px solid black;
+  position: relative;
+  -webkit-animation-name: right-left;
+          animation-name: right-left;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes right-left {
+  0% - 100% {
+    50% {
+      right: 800px;
+      top: 0px;
+    }
+    100% {
+      left: -800px;
+      top: 0px;
+    }
+  }
+}
+
+@keyframes right-left {
+  0% - 100% {
+    50% {
+      right: 800px;
+      top: 0px;
+    }
+    100% {
+      left: -800px;
+      top: 0px;
+    }
+  }
+}
+/*# sourceMappingURL=style.css.map */

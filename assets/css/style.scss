@@ -1,0 +1,51 @@
+@import "variables";
+
+.container {
+  margin-top: 50px;
+  width: 800px;
+  height: 300px;
+  border-top: 1px solid black;
+}
+
+
+
+div:nth-child(1) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: red;
+    border: 1px solid $color4;
+    animation-name: example;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+div:nth-child(2) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: blue;
+    border: 1px solid $color4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+div:nth-child(3) {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background: yellow;
+    border: 1px solid $color4;
+    position: relative;
+    animation-name: right-left;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes right-left {
+    0% - 100% {
+    50%   {right:800px; top:0px;}
+    100% {left:-800px; top:0px;}
+  }
+}
