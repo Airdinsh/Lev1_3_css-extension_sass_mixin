@@ -44,8 +44,8 @@ Verwende @keyframes, um die Animation zu erstellen. */
   border: 1px solid black;
   -webkit-animation-name: move;
           animation-name: move;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
   -webkit-animation: move 2s ease-in-out infinite;
           animation: move 2s ease-in-out infinite;
 }
@@ -58,8 +58,8 @@ Verwende @keyframes, um die Animation zu erstellen. */
   border: 1px solid black;
   -webkit-animation-name: move;
           animation-name: move;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
   -webkit-animation: move 2s ease-in-out infinite;
           animation: move 2s ease-in-out infinite;
 }
